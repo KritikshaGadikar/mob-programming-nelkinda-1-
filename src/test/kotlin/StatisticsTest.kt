@@ -11,4 +11,13 @@ class StatisticsTest {
 
         assertEquals(expected.toDouble(), actual)
     }
+
+    @Test
+    fun `test statistics method for maximun number` () {
+        val input = listOf(6, 9, 15, -2, 92, 11)
+        val expected = 92
+        val actual = stat(input)
+
+        assertEquals(expected.toDouble(), actual)
+    }
 }

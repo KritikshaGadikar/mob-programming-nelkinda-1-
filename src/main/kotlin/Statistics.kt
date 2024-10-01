@@ -1,5 +1,5 @@
 
 
 fun stat(list: List<Int>): Double {
-    return 0.0
+    return list.min().toDouble()
 }
