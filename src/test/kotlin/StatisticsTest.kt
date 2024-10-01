@@ -28,4 +28,12 @@ class StatisticsTest {
 
         assertEquals(expected.toDouble(), actual)
     }
+
+    @Test
+    fun `test statistics method to get average value` () {
+        val expected = 21.833333
+        val actual = stat("average", input)
+
+        assertEquals(expected.toDouble(), actual)
+    }
 }
