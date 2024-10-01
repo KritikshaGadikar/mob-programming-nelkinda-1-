@@ -18,4 +18,12 @@ class RemoveDuplicateTest {
         val excepted = listOf(1,2)
         assertEquals(excepted,actual)
     }
+
+    @Test
+    fun `list contain duplicate should return unique list`(){
+        val initailList= listOf(1,1,2,3,4,4,5)
+        val result= listOf(1,2,3,4,5)
+        assertEquals(result,removeDuplicates(initailList))
+
+    }
 }
